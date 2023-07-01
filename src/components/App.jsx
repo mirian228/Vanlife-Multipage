@@ -15,14 +15,14 @@ export default function App() {
     <div className='container'>
     <BrowserRouter>
     <nav className='navbar'>
-    <Link className="navbar-links-home" to="/home">#VANLIFE</Link>
+    <Link className="navbar-links-home" to="/">#VANLIFE</Link>
         <div className='navbar-links'>
     <Link onClick={aboutLine} className={about} to="/about">About</Link>
     <Link className="navbar-links-vans" to="/vans">Vans</Link>
         </div>
     </nav>
     <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
     </Routes>
     <footer className='footer'>
